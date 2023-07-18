@@ -1,0 +1,45 @@
+
+<div>[text* your-name placeholder "Your Full Name*"]</div> 
+<div>[text* company-name placeholder "Company Name*"]</div> 
+<div>[text* your-address placeholder "Business Address*"]</div>
+<div>[text* your-postcode placeholder "Postcode*"]</div>
+<div id="emailcf7margin">[email* your-email placeholder "Email Address*"] </div>
+<div class="telcf7margin">[tel* Telephone placeholder "Phone Number*"] </div>
+<div style="display:none;margin-bottom:5px;">[dynamictext* your-subject "CF7_get_post_var key='title'"]</div>
+[textarea your-message placeholder "Tell us more about your requirements"]
+[submit "Send"]
+
+<style>
+input, select {input, select {margin-top: 5px;margin-bottom: 5px; border: 1px solid #E5E5E5; width: 100%; color: #999999; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px; 
+-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px; }input[type="submit"]{width: 30px!important;}
+</style>
+
+......................................
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+<p>Contact the author of this page:</p>
+
+<address>
+  <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+  <a href="tel:+13115552368">(311) 555-2368</a>
+</address>
+
+ <address>
+    You can contact author at <a href="http://www.somedomain.com/contact">
+    www.somedomain.com</a>.<br>
+    If you see any bugs, please <a href="mailto:webmaster@somedomain.com">
+    contact webmaster</a>.<br>
+    You may also want to visit us:<br>
+    Mozilla Foundation<br>
+    331 E Evelyn Ave<br>
+    Mountain View, CA 94041<br>
+    USA
+  </address>
+

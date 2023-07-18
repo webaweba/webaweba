@@ -1,0 +1,116 @@
+<!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 
+  CSS3,Bootstrap,Tailwind CSS,Shoelace Style which are 100% Mobile friendly. w3Hubs all Layouts are responsive 
+  cross browser supported, best quality world class designs. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plain Contact Us Form In HTML and CSS</title>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <style type="text/css">
+      *{
+      font-family: "Nunito Sans";
+      }
+      body{
+      background-color: #e6ebff;
+      margin: 0;
+      }
+      .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0px auto;
+      }
+      form{
+      background-color: #fff;
+      padding: 35px;
+      border-radius: 4px;
+      }
+      input,textarea{
+      width: 100%;
+      margin-top: 25px;
+      padding: 5px 15px;
+      box-sizing: border-box;
+      line-height: 2;
+      font-size:16px;
+      background: #ecf0f1;
+      border: 2px solid rgba(216, 216, 216, 0.3);
+      border-radius: 6px;
+      }
+      input{
+      height: 50px;
+      }
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      textarea{
+      height: 120px;
+      padding-top: 10px;
+      }
+      button{
+      background-color: #d63031;
+      color: #fff;
+      padding: 10px 30px;
+      border:0px;
+      height: 50px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 18px;
+      border-radius: 6px;
+      }
+      button:hover{
+      background-color: #e74c3c;
+      }
+      @media(min-width: 762px){
+      .container{
+      max-width: 50%;
+      }
+      }
+      @media(max-width: 762px){
+      .container{
+      max-width: 70%;
+      }
+      }
+      @media(max-width: 575px){
+      .container{
+      max-width: 80%;
+      }
+      form{
+      padding: 20px;
+      }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <form>
+        <input type="text" name="" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Subject">
+        <input type="number" placeholder="Mobile Number">
+        <textarea placeholder="Message"></textarea>
+        <button type="button">Send Now</button>
+      </form>
+    </div>
+
+ <address>
+    You can contact author at <a href="http://www.somedomain.com/contact">
+    www.somedomain.com</a>.<br>
+    If you see any bugs, please <a href="mailto:webmaster@somedomain.com">
+    contact webmaster</a>.<br>
+    You may also want to visit us:<br>
+    Mozilla Foundation<br>
+    331 E Evelyn Ave<br>
+    Mountain View, CA 94041<br>
+    USA
+  </address>
+
+  </body>
+</html>

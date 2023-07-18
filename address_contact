@@ -1,0 +1,28 @@
+
+ <address>
+ For any enquiry,<br>
+You can contact us <a href="mailto:info@pccoresolution.ga"> by email</a>.<br>
+You may also want to visit us:<br>
+By requesting the nearest local<br>
+Address close to you<br><a href="contact.html">Enquiry</a>.<br>
+And using the map at:<br>
+<a href="contact.html">PC-Core Solution</a>.<br>
+ </address>
+
+.........................
+
+ <address>
+ For any enquiry,<br>
+You can contact us <a href="mailto:info@elecommpc.ml"> by email</a>.<br>
+You may also want to visit us:<br>
+By requesting the nearest local<br>
+Address close to you<br><a href="contact.html">Enquiry</a>.<br>
+And using the map at:<br>
+<a href="contact.html">PC-Elecomm</a>.<br>
+ </address>
+
+<a href="#">
+ <form class="navbar-search" method="get" action="https://www.google.com/search"><input name="q" type="text" size="10" maxlength="140" class="search-query span2" placeholder="Search PC-Elecomm"/><input name="sitesearch" type="hidden" value="elecommpc.ml"/></form>
+</a>
+
+

@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="google-site-verification" content="A6pTdf1jfIzo-VhxKDJW7N5Kv85JUxkt89nDRHCG0zw" />
+<meta name="msvalidate.01" content="04E045F7BCA8B6291E87DCB58D5596A5" />
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>PC Core Solution</title>
+<TITLE>PC-Core Solution</TITLE>
+<meta name="Description" content="The PC-Core Solution offers a Linux-based computer solution which is a hardened and protected Operating System.  PC-Core Solution is your bridge between technology and business strategy. PC-Core Solution empower your business with security in cyberspace">
+<meta name="Keywords" content="Electronic repairs, computer repairs,Linux-based solution,computer solution, protected Operating System, Security, Anti-Virus, Malware, ransomeware">
+    <!-- TemplateEndEditable -->
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+    <style type="text/css">
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 98%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #6F7D94;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 60%;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background-color: #8090AB;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #6F7D94;
+	color: #FFF;
+}
+
+/* ~~The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~miscellaneous float/clear classes~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+body {
+  font-size: 62.5%;
+  background: url(images/top-bdr.jpg) repeat;
+}
+
+p, li {
+  font: 1.2em/1.8em Sabon, sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font: 2.0em "Helvetica Neue", sans-serif;
+  color: white;
+  height: 0px;
+}
+
+h2 {
+  font: 1.8em "Helvetica Neue", sans-serif;
+  color: #99cc33;
+  margin-bottom: 10px;
+}
+
+h4  {
+  font :Georgia, "Times New Roman", Times, serif;
+  color: #0078AA;
+}
+
+h3  {
+  font :Georgia, "Times New Roman", Times, serif;
+  color: #333399;
+}
+
+ul {
+  margin-left: 25px;
+}
+
+img {
+  border: none;
+}
+
+#page-wrap {
+  background: white;
+    width: 960px;
+  margin: 10px auto;
+  }
+  #page-wrap #inside {
+    margin: 10px 10px 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+#main-content {
+  background: url(/images/left-sidebar.gif) repeat-y white;
+  padding-left: 230px;
+  padding-top: 20px;
+}
+  
+#header {
+  background: #ffffff;
+  text-align: center;
+}
+
+#menu {
+  background: #ffffff;
+}
+
+#left-sidebar {
+  width: 185px;
+  float: right;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'zocial', sans-serif;
+}
+[data-icon]:before {
+    font-family: 'zocial';
+    content: attr(data-icon);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition:  all .2s linear;
+    transition: all .2s linear;
+}
+.clear {
+    clear: both;
+}
+#main{
+    background-color: #FFFFFF;
+    padding: 200px 0 500px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+footer {
+    background-color: #2E3639;
+    position: relative;
+    z-index: 1;
+}
+footer .splitter {
+    background-color: #ac0;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+        color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+        color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+        to(transparent));
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+    background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    
+    -moz-box-shadow: 1px 1px 8px gray;
+    -webkit-box-shadow: 1px 1px 8px gray;
+    box-shadow: 1px 1px 8px gray;
+
+    height: 20px;
+}
+footer > ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 25px 0;
+    position: relative;
+    width: 95%;
+}
+footer > ul li {
+    float: left;
+    padding: 20px 15px;
+    width: 33.3%;
+
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+footer > ul li:first-child {
+    padding-left: 0;
+}
+footer > ul li:nth-child(3) {
+    padding-right: 0;
+}
+footer > ul li .icon {
+    color: #999999;
+    float: left;
+    font-size: 80px;
+    line-height: 80px;
+}
+footer > ul li .text {
+    color: #848889;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 105px;
+    position: relative;
+    text-align: justify;
+}
+.text h4 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.text a {
+    border-bottom: 1px dotted transparent;
+    color: #FFDD00;
+    font-weight: bold;
+}
+.text a:hover {
+    border-color: #FFDD00;
+}
+footer .bar {
+    background-color: #1E2629;
+    padding: 20px 0;
+}
+footer .bar-wrap {
+    font-size: 12px;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    width: 95%;
+}
+.links {
+    float: left;
+    list-style: none outside none;
+    position: relative;
+}
+.links li {
+    float: left;
+    margin-right: 10px;
+}
+.links a {
+    color: #778888;
+}
+.links a:hover {
+    color: #FFFFFF;
+}
+.social {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.social a {
+    color: #778888;
+    margin-left: 20px;
+}
+.social a:hover {
+    color: #FFFFFF;
+}
+.social .icon {
+    display: inline-block;
+    font-size: 36px;
+    margin-right: 5px;
+    vertical-align: middle;
+
+    -webkit-transition: -webkit-transform .3s linear;
+    -moz-transition: -moz-transform .3s linear;
+    -ms-transition: -ms-transform .3s linear;
+    -o-transition:  -o-transform .3s linear;
+    transition: transform .3s linear;
+}
+.social a:hover  .icon {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.social .info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.social .info .follow {
+    display: block;
+}
+.social .info .num {
+    display: block;
+}
+.copyright {
+    color: #778888;
+    margin-top: 5px;
+}
+
+/* responsive rules */
+@media screen and (max-width: 1000px){
+    .links, .social, .copyright{
+        float:none;
+        text-align:center;
+    }
+    .social {
+        position:relative;
+        margin:10px 0;
+    }
+    .links li {
+        display:inline-block;
+        float:none;
+    }
+    .bar {
+        position:relative;
+    }
+    .bar-wrap {
+        margin-bottom:0;
+    }
+}
+
+@media screen and (max-width: 835px)  {
+    footer > ul li {
+        float:none;
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .links li {
+        margin-right:5px;
+    }
+}
+
+.footer a:link    {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #006699;
+  } 
+.footer a:visited {
+  /* Applies to visited links in class mainNav */
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #006699;
+  } 
+.footer a:hover   {
+  /* Applies to links under the pointer in class mainNav */
+  text-decoration:  underline;
+  font-weight:      bold;
+  color:            #006699;
+  } 
+
+
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.preload1 {background: url(menu/three_1.gif);}
+.preload2 {background: url(menu/three_1a.gif);}
+
+#nav {padding-left:217px; margin:0; list-style:none; height:38px; background:#fff url(menu/three_0.gif) repeat-x; position:relative; z-index:500; font-family:arial, verdana, sans-serif;}
+#nav li.top {display:block; float:right; height:38px;}
+#nav li a.top_link {display:block; float:right; height:35px; line-height:33px; color:#ccc; text-decoration:none; font-size:11px; font-weight:bold; padding:0 0 0 12px; cursor:pointer;background: url(menu/three_0.gif);}
+#nav li a.top_link span {float:left; display:block; padding:0 24px 0 12px; height:35px; background: url(menu/three_0.gif) right top no-repeat;}
+#nav li a.top_link span.down {float:right; display:block; padding:0 24px 0 12px; height:35px; background: url(menu/three_0a.gif) no-repeat right top;}
+
+#nav li:hover a.top_link {color:#fff; background: url(menu/three_1.gif) no-repeat;}
+#nav li:hover a.top_link span {background:url(menu/three_1.gif) no-repeat right top;}
+#nav li:hover a.top_link span.down {background:url(menu/three_1a.gif) no-repeat right top;}
+
+/* Default list styling */
+
+#nav li:hover {position:relative; z-index:200;}
+
+#nav li:hover ul.sub
+{left:1px; top:38px; background: #bbd37e; padding:3px; border:1px solid #5c731e; white-space:nowrap; width:110px; height:auto; z-index:300;}
+#nav li:hover ul.sub li
+{display:block; height:20px; position:relative; float:right; width:110px; font-weight:normal;}
+#nav li:hover ul.sub li a
+{display:block; font-size:11px; height:18px; width:108px; line-height:18px; text-indent:5px; color:#000; text-decoration:none;border:1px solid #bbd37e;}
+#nav li ul.sub li a.fly
+{background:#bbd37e url(menu/arrow.gif) 100px 6px no-repeat;}
+#nav li:hover ul.sub li a:hover 
+{background:#6a812c; color:#fff; border-color:#fff;}
+#nav li:hover ul.sub li a.fly:hover
+{background:#6a812c url(menu/arrow_over.gif) 100px 6px no-repeat; color:#fff;}
+
+#nav li:hover li:hover ul,
+#nav li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover ul,
+#nav li:hover li:hover li:hover li:hover li:hover ul
+{left:110px; top:-4px; background: #bbd37e; padding:3px; border:1px solid #5c731e; white-space:nowrap; width:110px; z-index:400; height:auto;}
+
+#nav ul, 
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#nav li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover li:hover a.fly
+{background:#6a812c url(menu/arrow_over.gif) 110px 6px no-repeat; color:#fff; border-color:#fff;} 
+
+#nav li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li a.fly,
+#nav li:hover li:hover li:hover li:hover li a.fly
+{background:#bbd37e url(menu/arrow.gif) 110px 6px no-repeat; color:#000; border-color:#bbd37e;}
+
+*{
+padding: 0;
+margin: 0;
+}
+body{
+min-width: 100%;
+min-height: 100%;
+padding-bottom: 0;
+color: #393939;
+font-family: sans-serif;
+}
+#navbar-top{
+width: 100%;
+height: 50px;
+position: fixed;
+background-color: #438eb9;
+}
+.handle{
+display: none;
+}
+#navbar-side{
+width: 189px;
+height: 100%;
+margin-top: 50px;
+position: fixed;
+background-color: #f2f2f2;
+border-right: 1px solid #ccc;
+}
+#navbar-side ul{
+overflow: hidden;
+padding: 0;
+margin: 0;
+}
+#navbar-side ul li{
+list-style: none;
+border-bottom: 1px solid #e5e5e5;
+}
+#navbar-side a{
+width: 100%;
+font-size: 14px;
+line-height: normal;
+padding: 10px 0 10px 20px;
+box-sizing: border-box;
+display: block;
+color: #555;
+text-decoration: none;
+}
+#navbar-side a:hover{
+padding-left: 17px;
+background-color: #fff;
+color: #08c;
+border-left: 3px solid #08c;
+}
+#navbar-side ul ul{
+display: none;
+}
+#navbar-side ul ul li a{
+padding-left: 30px;
+border-left: none;
+}
+#navbar-side ul ul li a:hover{
+padding-left: 30px;
+border-left: none;
+}
+#navbar-side .menu-text{
+margin-left: 20px;
+}
+#navbar-side b{
+float: right;
+margin-right: 17px;
+}
+#wrap  {
+  width: 100%; /* Spans the width of the page */
+  height: 50px; 
+  margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+  z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+  position: relative; 
+  background-color: #366b82;
+  }
+.navbar li   {
+      height: auto;
+      width: 150px;  /* Each menu item is 150px wide */
+      float: left;  /* This lines up the menu items horizontally */
+      text-align: center;  /* All text is placed in the center of the box */
+      list-style: none;  /* Removes the default styling (bullets) for the list */
+      font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+      padding: 0;
+      margin: 0;
+      background-color: #366b82;
+  }
+.navbar  {
+  height: 50px;
+        padding: 0;
+  margin: 0;
+  position: absolute; /* Ensures that the menu doesn’t affect other elements */
+  border-right: 1px solid #54879d; 
+  }
+.navbar a  {              
+    padding: 18px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+    border-left: 1px solid #54879d; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+    border-right: 1px solid #1f5065; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+    text-decoration: none;  /* Removes the default hyperlink styling. */
+    color: white; /* Text color is white */
+    display: block;
+    }
+
+.navbar li ul   {
+    display: none;  /* Hides the drop-down menu */
+    height: auto;                  
+    margin: 0; /* Aligns drop-down box underneath the menu item */
+    padding: 0; /* Aligns drop-down box underneath the menu item */      
+    }        
+
+.navbar li:hover ul   {
+                        display: block; /* Displays the drop-down box when the menu item is hovered over */
+ }
+ .navbar li ul li {background-color: #54879d;} 
+.navbar li ul li a   {
+    border-left: 1px solid #1f5065; 
+    border-right: 1px solid #1f5065; 
+    border-top: 1px solid #74a3b7; 
+    border-bottom: 1px solid #1f5065; 
+    }
+        
+.navbar li ul li a:hover  {background-color: #366b82;}
+
+#wrap {
+width: 100%; /* Spans the width of the page */
+height: 50px;
+margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+position: relative;
+background-color: #366b82;
+}
+.navbar li
+{
+height: auto;
+width: 150px; /* Each menu item is 150px wide */
+float: left; /* This lines up the menu items horizontally */
+text-align: center; /* All text is placed in the center of the box */
+list-style: none; /* Removes the default styling (bullets) for the list */
+font: normal bold 12px/1.2em Arial, Verdana, Helvetica;
+padding: 0;
+margin: 0;
+background-color: #366b82;
+}
+.navbar {
+height: 50px;
+padding: 0;
+margin: 0;
+position: absolute; /* Ensures that the menu doesn’t affect other elements */
+border-right: 1px solid #54879d;
+}
+.navbar a {
+padding: 18px 0; /* Adds a padding on the top and bottom so the text appears centered vertically
+*/
+border-left: 1px solid #54879d; /* Creates a border in a slightly lighter shade of blue than the
+background. Combined with the right border, this creates a nice effect. */
+border-right: 1px solid #1f5065; /* Creates a border in a slightly darker shade of blue than the
+background. Combined with the left border, this creates a nice effect. */
+text-decoration: none; /* Removes the default hyperlink styling. */
+color: white; /* Text color is white */
+display: block;
+}
+.navbar li ul
+{
+display: none; /* Hides the drop-down menu */
+height: auto;
+margin: 0; /* Aligns drop-down box underneath the menu item */
+padding: 0; /* Aligns drop-down box underneath the menu item */
+}
+.navbar li:hover ul
+{
+display: block; /* Displays the drop-down box when the menu item is hovered
+over */
+}
+.navbar li ul li {background-color: #54879d;}
+.navbar li ul li a
+{
+border-left: 1px solid #1f5065;
+border-right: 1px solid #1f5065;
+border-top: 1px solid #74a3b7;
+border-bottom: 1px solid #1f5065;
+}
+.navbar li ul li a:hover
+{background-color: #366b82;}
+
+.sidebar {
+   width: 100px;
+   height: 300px;
+   position: fixed;
+   left: 0px;
+   top: 300px;
+   border: 1px solid black;
+}
+/* SECTIONS */
+.section {
+clear: both;
+padding: 0px;
+margin: 0px;
+}
+/* COLUMN SETUP */
+.col {
+display: block;
+float:left;
+margin: 1% 0 1% 5.6%;
+}
+.col:first-child { margin-left: 0; }
+/* GROUPING */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/* GRID OF TWO */
+.span_2_of_2 {
+width: 100%;
+}
+.span_1_of_2 {
+width: 47.2%;
+}
+/* GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+.col {
+margin: 1% 0 1% 0%;
+}
+}
+@media only screen and (max-width: 480px) {
+.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.contacts
+{
+width: 430px;
+overflow-x: hidden;
+overflow-y: hidden;
+margin-top: 0px;
+margin-right: 270px;
+margin-bottom: 0px;
+margin-left: auto;
+padding-top: 8px;
+padding-right: 0px;
+padding-bottom: 30px;
+padding-left: 0px;
+text-align: right;
+}
+
+</style><!--[if lte IE 7]>
+<style>.content { margin-right: -1px; } /* this 1px negative margin can -->
+  </head>
+  <body class="nav">
+        <p align="center"> </p>
+        <div style="text-align:center;">
+<a href="#"><img style="width:1250px; height:272px; position:static; z-index:100;
+        right:0px; " src="titled.jpg" alt="titled.jpg"></a>
+        </div>
+    <div class="container">
+      <div class="header">
+        <div id="wrap">
+          <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Retrievals</a>
+              <ul>
+                <li><a href="#">Data Listing</a></li>
+                <li><a href="downlo.html">Download</a></li>
+                <li><a href="http://www.pccorelinux.gq">Mobile phone Applications</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Business</a>
+              <ul>
+                <li><a href="info.html">Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+  <li><a href="http://www.pccorelinux.gq" target="_BLANK">freeware</a></li>
+                <li><a href="http://www.gmail.com/">Google</a></li>
+                <li><a href="http://www.outlook.com/">MSN</a></li>
+                <li><a href="downlo.html">Download</a></li>
+              </ul>
+            </li>
+
+
+<li>
+<form class="navbar-search" method="get" action="https://www.google.com/search"><input name="q" type="text" class="search-query span2" placeholder="Search pccore solution"/><input name="sitesearch" type="hidden" value="pccore-solution.ga"/></form>
+  </li>
+<li>
+<a href="#"></a>
+<ul>
+
+</ul>
+</li>
+<li>
+<a href="#"></a>
+<ul>
+
+</ul>
+</li>
+            <li><a href="#">PC Core Solution</a>
+              <ul>
+                <li><a href="index.html">PC Core Solution</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Secure Data-Driven Listings</a></li>
+                <li><a href="#">Secure Shopping Cart</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p><a href="#" class="sidebar2"><img src="bizlogo.jpeg"
+            alt="bizlogo.jpeg" id="Insert_logo" style="background-color:
+            #8090AB; display:block;" width="200" height="170"></a></p>
+    </div>
+
+    <div class="sidebar">
+      <p><a href="contact.html" target="_BLANK">Contact</a></p>
+      <p><a href="index.html" target="_BLANK">Home</a></p>
+      <p><a href="info.html"    target="_BLANK">Information</a></p>
+  <p><a href="http://www.pccorelinux.gq" target="_BLANK">freeware</a></p>
+      <p><a href="http://www.gmail.com/" target="_BLANK">Google</a></p>
+      <p><a href="http://www.outlook.com/" target="_BLANK">MSN</a></p>
+      <p> </p>
+    </div>
+    <div>
+      <div class="content">
+
+<div class="section group">
+<div class="col span_1_of_2"> 
+<br></br><br></br><br></br>
+<br></br><br></br><br></br>
+<tr>
+<p><a href="http://www.pccorelinux.gq" target="_BLANK"><h3>Freeware</h3></a></p>
+</div>
+<div class="col span_1_of_2"> 
+<p><a><img src="pccore.png" width="100" height="30"></a></p>
+</div>
+<br>
+</div>
+
+<div class="section group">
+<div class="col span_1_of_2"> 
+ <p><a><img src="pccore.png" width="100" height="30"></a></p>
+</div>
+<div class="col span_1_of_2"> 
+<p><a><img src="pccore.png" width="100" height="30"></a></p>
+</div>
+
+<div class="section group">
+<div class="col span_1_of_2"> 
+<p><a><img src="pccore.png" width="100" height="30"></a></p>
+ </div>
+<div class="col span_1_of_2"> 
+ <p><a href="downlo.html" target="_BLANK"><h3>Free Distribution: Download Linux</h3></a></p>
+</div>
+<br>
+</div>
+
+<address> 
+
+</address>
+
+        <!-- end .content --></div>
+      <div class="sidebar2">
+    
+        <script>
+http://www.flooble.com/scripts/sidebar.php
+var ie = false;
+var open = true;
+var oldwidth = -1;
+if (document.all) { ie = true; }
+function getObj(id) {
+if (ie) { return document.all[id]; }
+else {
+return document.getElementById(id);
+}
+}
+function toggleSidebar() {
+var sidebar = getObj('sidebarcontents');
+var menu = getObj('sidebarmenu');
+var arrow = getObj('sidearrow');
+if (open) {
+var sidec = getObj('sidebar');
+var h = sidec.scrollHeight;
+if (oldwidth < 0) {
+oldwidth = sidebar.scrollWidth;
+}
+sidebar.style.display = 'none';
+td = getObj('sidebartd');
+td.style.width = 0;
+arrow.innerHTML = '>';
+//alert(h + ' - ' + sidec.scrollHeight);
+sidec.style.height = h;
+open = false;
+} else {
+sidebar.style.display = 'block';
+sidebar.style.width = oldwidth;
+arrow.innerHTML = '<';
+open = true;
+}
+getObj('focuser').focus();
+}
+function setSidebarTop() {
+//alert('hoy');
+var sidec = getObj('sidebar');
+sidec.style.top = 10 + document.body.scrollTop;
+setTimeout('setSidebarTop()', 10);
+}
+setTimeout('setSidebarTop();', 2000);
+</script>
+        <table id="sidebar" style="border-top: 1px solid #000000;
+          border-bottom: 1px solid #000000; position:absolute;
+          z-index:100; right:0px; top:10px; font-family:Verdana;">
+          <tbody>
+            <tr>
+              <td id="sidebartd" bgcolor="#FF3300">
+                <div id="sidebarcontents" style="padding: 5px; color:
+                  #006699;"> <a href="/" target="_blank"><b>Right-Hand</b></a>
+                  <p><a href="index.html"   target="_blank">Home</a></p>
+                  <p><a href="info.html"  target="_BLANK">Information</a></p>
+  <p><a href="http://www.pccoresolution.tk/quixplorer" target="_BLANK">freeware</a></p>
+                  <p><a href="contact.html" target="_blank">Contact</a></p>
+                  <p><a href="http://www.gmail.com/" target="_blank">Google</a></p>
+                  <p><a href="http://www.outlook.com/" target="_blank">MSN</a></p>
+                  <p> </p>
+                </div>
+              </td>
+              <td id="menucontainer" bgcolor="#FF0000"> <a
+                  href="javascript:void(0);" id="sidebarmenu"
+                  onclick="toggleSidebar();" style="color:#FFFFFF;
+                  text-decoration:none;font-weight:bold;
+                  font-family:Helvetica;"><span id="sidearrow">&lt;</span><br>
+                  M<br>
+                  e<br>
+                  n<br>
+                  u</a><br>
+                <a href="javascript:void(0);" style="color: #000000;
+                  heigh:1px;" id="focuser"> </a> </td>
+            </tr>
+          </tbody>
+        </table>
+        <script>toggleSidebar();</script>
+        <!-- end .sidebar2 --></div></div>
+
+<p align="right">
+      <div class="footer" style="position:static; z-index:100;
+        right:10px; bottom:10px; "></p>
+    <footer>
+        <div class="splitter"></div>
+        <ul>
+            <li>
+                <div class="icon" data-icon="C"></div>
+                <div class="text">
+
+                    <h4>Company</h4>
+                    <div>
+
+ <p><a href="#"><img src="bizlogo.jpeg" width="200" height="170"></a></p>
+
+</div>
+                </div>
+            </li>
+            <li>
+                <div class="icon" data-icon="A"></div>
+                <div class="text">
+                    <h4>Address</h4>
+
+ <address>
+ For any enquiry,<br>
+You can contact us <a href="mailto:info@pccoresolution.ga"> by email</a>.<br>
+You may also want to visit us:<br>
+By requesting the nearest local<br>
+Address close to you<br><a href="contact.html">Enquiry</a>.<br>
+And using the map at:<br>
+<a href="contact.html">PC-Core Solution</a>.<br>
+ </address>
+
+
+                </div>
+            </li>
+            <li>
+                <div class="icon" data-icon="B"></div>
+                <div class="text">
+                    <h4>Payment Methods</h4>
+<br>
+                    <div>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="paypal" style="display: block;"><input name="cmd" value="_xclick" type="hidden"><input name="business" value="info@pccoresolution.ga" type="hidden"><input name="lc" value="US" type="hidden"><input name="item_name" value="" type="hidden"><input name="amount" value="0" type="hidden"><input name="currency_code" value="USD" type="hidden"><input name="button_subtype" value="services" type="hidden"><input name="no_note" value="0" type="hidden"><input name="shipping" value="0" type="hidden"><input name="bn" value="JSCProfis_SP" type="hidden"><input src="btn_buynow_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0"><img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" border="0"></form>
+<input src="btn_buynow_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0">
+<br>
+<a href="#">Basket</a></div>
+
+                </div>
+            </li>
+        </ul>
+
+        <div class="bar">
+            <div class="bar-wrap">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="downlo.html">Download</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="info.html">information</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+
+                <div class="social">
+<a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%
+20 https://simplesharebuttons.com"> <img src="email.ico" img alt="Email" />
+     <span class="info"></span>
+                    </a>
+                    <a href="http://www.facebook.com" target="_blank">
+<img src="facebook.ico" img alt="Facebook" class="fb">
+                        <span class="info">
+                            <span class="follow"></span>
+                        </span>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+<img src="twitter.png" alt="Twitter" class="tw">
+                        <span class="info">
+                            <span class="follow"></span>
+                        </span>
+                    </a>
+<a href="https://plus.google.com" target="_blank">
+<img src="google.png" alt="Google" />
+                        <span class="info">
+                            <span class="follow"></span>
+                        </span>
+                    </a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com"
+target="_blank">
+<img src="linkedin.png" alt="LinkedIn">
+      <span class="info"></span>
+                    </a>
+                </div>
+                <div class="clear"></div>
+                <div class="copyright"> &copy; All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+      <!-- end .container --></div>
+  </body>
+</html>
